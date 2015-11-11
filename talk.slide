@@ -1,0 +1,63 @@
+Go e o mundo dos microservices
+
+Marco Singer
+Software Enginner, Codeminer42
+marco.singer@codeminer42.com
+http://github.com/marcosinger
+@mahsinger
+
+* O que um microservice?
+_In_computing,_microservices_is_a_software_architecture_style_in_which_complex_applications_
+_are_composed_of_small,_independent_processes_communicating_with_each_other_using_language-agnostic_APIs._
+_These_services_are_small,_highly_decoupled_and_focus_on_doing_a_small_task,_facilitating_a_modular_approach_to_system-building._
+
+.link https://en.wikipedia.org/wiki/Microservices Wikipedia
+
+* Vantagens
+- Pode ser feito em qualquer linguagem
+- Mais fácil para escalar
+- Uma equipe por projeto
+- Como a base de código tende a ser menor, novos devs se tornam produtivos mais rapidamente
+
+* Desvantagens
+- Difícil fazer testes mais integrados
+- Regra de negócio pode ficar espalhada
+- Considerado Alpha (https://www.thoughtworks.com/radar/techniques)
+
+* Frameworks
+- Gin
+- Kite
+- Go-kit
+
+* DEMO
+
+* Performance
+*String* (_wrk_-t2_-c100_-d60s_)
+Standard library
+  1_061_337 requests - Requests/sec: 17_666.70
+
+Gin
+  822_261 requests - Requests/sec: 13_690.07
+
+*JSON* (_wrk_-t2_-c100_-d60s_)
+Standard library
+  936_080 requests - Requests/sec: 15_588.09
+
+Gin
+  712_687 requests - Requests/sec: 11_862.71
+
+* Bibliotecas
+.link https://github.com/jinzhu/gorm Gorm
+.link https://github.com/go-redis/redis Redis
+.link https://github.com/go-mgo/mgo Mgo
+
+* Serviços
+.link http://docs.travis-ci.com/user/languages/go/ Travis
+.link https://houndci.com/configuration#go HoundCI
+.link https://blog.heroku.com/archives/2015/7/7/go_support_now_official_on_heroku Heroku
+.link http://swagger.io Swagger
+
+* Estamos contratando
+.image images/codeminer.png
+become@codeminer42.com
+
